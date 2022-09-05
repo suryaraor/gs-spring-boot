@@ -32,7 +32,7 @@ import oracle.ucp.jdbc.PoolDataSource;
 import oracle.ucp.jdbc.PoolDataSourceFactory;
 
 public class UCPSample {
-	final static String DB_URL = "jdbc:oracle:thin:@suryadb01_medium?TNS_ADMIN=/home/opc/gs-spring-boot/complete/Wallet_suryadb01";
+	final static String DB_URL = "jdbc:oracle:thin:@(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-ashburn-1.oraclecloud.com))(connect_data=(service_name=gf6bd4ac584368f_suryadb01_medium.adb.oraclecloud.com))(security=(ssl_server_cert_dn=\"CN=adwc.uscom-east-1.oraclecloud.com, OU=Oracle BMCS US, O=Oracle Corporation, L=Redwood City, ST=California, C=US\")))?TNS_ADMIN=/home/opc/gs-spring-boot/complete/Wallet_suryadb01";
 	// Use TNS alias when using tnsnames.ora. Use it while connecting to the
 	// database service on cloud.
 	// final static String DB_URL= "jdbc:oracle:thin:@orcldbaccess";
