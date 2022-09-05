@@ -15,7 +15,8 @@ public class HelloController {
 	
 	@GetMapping("/name")
 	public String name() {
-		return "Surya Rayarao";
+		String nameFromDB = UCPSample.getNameFromDB();
+		return nameFromDB;
 	}
 
 }
